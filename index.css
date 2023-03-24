@@ -10,9 +10,16 @@ body {
   }
 }
 
+a {
+  color: black;
+}
+
 .dark-mode {
   background-color: black;
   color: white;
+	.a {
+	color:white;
+	}
 }
 
 .header {
