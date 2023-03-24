@@ -1,6 +1,12 @@
 body {
   background-color:white;
   color:black;
+	.fa {
+    font-size: 2em;
+    width: 2em;
+    height: 2em;
+    text-align: center;
+  }
 }
 
 .dark-mode {
@@ -100,4 +106,31 @@ img {
 
 .checkbox-wrapper-22 .slider.round:before {
   border-radius: 50%;
+}
+
+// Brand Colors
+@fa-twitter: #1DA1F2;
+@fa-github: #333;
+@fa-reddit: #ff4500;
+@fa-envelope: #1679f2;
+@fa-paypal: #3b7bbf;
+
+.fa {
+  // Default color for undefined
+  color: #efefef;
+  &.fa-twitter {
+    color: @fa-twitter;
+  }
+  &.fa-github {
+    color: @fa-github;
+  }
+  &.fa-reddit {
+    color: @fa-reddit;
+  }
+  &.fa-envelope {
+    color: @fa-envelope;
+  }
+  &.fa-paypal {
+    color: @fa-paypal;
+  }
 }
