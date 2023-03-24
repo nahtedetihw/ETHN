@@ -17,9 +17,9 @@ a i{
 .dark-mode {
   background-color: black;
   color: white;
-	a i{
-  color:#fff;
-}
+	.a, .i{
+  	color:#fff;
+	}
 }
 
 .header {
