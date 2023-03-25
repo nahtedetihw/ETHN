@@ -9,14 +9,8 @@ body {
 }
 
 .dark-mode {
-  .body {
-    background-color: #fff;
-    color: #000;
-  }
-  .html {
-    background-color: #fff;
-    color: #000;
-  }
+  background-color:#fff;
+  color:#000;
 }
 
 .header {
