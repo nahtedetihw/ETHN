@@ -6,17 +6,31 @@ body {
   align-items: center;
   font-family: sans-serif;
   color: #fff;
+
+  .checkbox-wrapper-22 {
+    background-color:#000;
+    color:#fff;
+  }
 }
 
 .dark-mode {
   background-color: #fff;
   color: #000;
+	
+  .checkbox-wrapper-22 {
+    background-color:#fff;
+    color:#000;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
   .body, html {
-    background: #000;
+    background-color: #000;
     color: #fff;
+  }
+  .checkbox-wrapper-22 {
+    background-color:#000;
+    color:#fff;
   }
 }
 
