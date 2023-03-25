@@ -6,7 +6,6 @@ body {
   align-items: center;
   font-family: sans-serif;
   color: #fff;
-  margin-top: 20px;
 }
 
 .dark-mode {
@@ -61,6 +60,11 @@ img {
   .masonry {
     column-count: 1;
   }
+}
+
+.checkbox-wrapper-22 {
+  margin-top:20px;
+  margin-left:20px;
 }
 
 .checkbox-wrapper-22 .switch {
