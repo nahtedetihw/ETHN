@@ -9,12 +9,22 @@ body {
 }
 
 .dark-mode {
-  background-color: #fff;
-  color: #000;
+  .body {
+    background-color: #fff;
+    color: #000;
+  }
+  .html {
+    background-color: #fff;
+    color: #000;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
-  .body, html {
+  .body {
+    background-color: #000;
+    color: #fff;
+  }
+  .html {
     background-color: #000;
     color: #fff;
   }
@@ -61,6 +71,11 @@ img {
   .masonry {
     column-count: 1;
   }
+}
+
+.checkbox-wrapper {
+  margin-top: 20px;
+  margin-left:20px;
 }
 
 .checkbox-wrapper-22 .switch {
