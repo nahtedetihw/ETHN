@@ -112,7 +112,7 @@ img {
 }
 
 .stackView {
-  align-items:left;
+  align-items:center;
   background-color:rgba(128, 128, 128, 0.2);
   width:500px;
   height:320px;
