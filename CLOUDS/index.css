@@ -56,10 +56,6 @@ img {
   .masonry {
     column-count: 1;
   }
-  .button {
-    padding: 14px 22px;
-    width: 176px;
-  }
 }
 
 .checkbox-wrapper-22 .switch {
@@ -123,57 +119,25 @@ img {
   margin-top: 20px;
 }
 
-.button-65 {
-  margin-top:20px;
-  appearance: none;
-  backface-visibility: hidden;
-  background-color: #2f80ed;
-  border-radius: 5px;
-  border-style: none;
-  box-shadow: none;
-  box-sizing: border-box;
+.button-10 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6px 14px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+  border-radius: 6px;
+  border: none;
+
   color: #fff;
-  cursor: pointer;
-  display: inline-block;
-  font-family: Inter,-apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif;
-  font-size: 15px;
-  font-weight: 500;
-  height: 30px;
-  letter-spacing: normal;
-  line-height: 1.5;
-  outline: none;
-  overflow: hidden;
-  padding: 7px 15px;
-  position: relative;
-  text-align: center;
-  text-decoration: none;
-  transform: translate3d(0, 0, 0);
-  transition: all .3s;
+  background: linear-gradient(180deg, #4B91F7 0%, #367AF6 100%);
+   background-origin: border-box;
+  box-shadow: 0px 0.5px 1.5px rgba(54, 122, 246, 0.25), inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2);
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  vertical-align: top;
-  white-space: nowrap;
 }
 
-.button-65:hover {
-  background-color: #1366d6;
-  box-shadow: rgba(0, 0, 0, .05) 0 5px 30px, rgba(0, 0, 0, .05) 0 1px 4px;
-  opacity: 1;
-  transform: translateY(0);
-  transition-duration: .35s;
-}
-
-.button-65:hover:after {
-  opacity: .5;
-}
-
-.button-65:active {
-  box-shadow: rgba(0, 0, 0, .1) 0 3px 6px 0, rgba(0, 0, 0, .1) 0 0 10px 0, rgba(0, 0, 0, .1) 0 1px 4px -1px;
-  transform: translateY(2px);
-  transition-duration: .35s;
-}
-
-.button-65:active:after {
-  opacity: 1;
+.button-10:focus {
+  box-shadow: inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2), 0px 0.5px 1.5px rgba(54, 122, 246, 0.25), 0px 0px 0px 3.5px rgba(58, 108, 217, 0.5);
+  outline: 0;
 }
