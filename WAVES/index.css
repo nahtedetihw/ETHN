@@ -1,0 +1,115 @@
+body {
+  background-color: #000;
+  align-items: center;
+  font-family: sans-serif;
+  color: #fff;
+  text-align:center;
+  padding: 25px;
+}
+
+.dark-mode {
+  background-color:#fff;
+  color:#000;
+  .button-65 {
+    background-color:#000;
+    color:#fff;
+  }
+}
+
+.header {
+  padding: 20px;
+  text-align: center;
+  font-size: 30px;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.checkbox-wrapper-22 .switch {
+  display: inline-block;
+  height: 34px;
+  position: relative;
+  width: 60px;
+}
+
+.checkbox-wrapper-22 .switch input {
+  display:none;
+}
+
+.checkbox-wrapper-22 .slider {
+  background-color: #D1D1D6;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: .4s;
+}
+
+.checkbox-wrapper-22 .slider:before {
+  background-color: #fff;
+  bottom: 4px;
+  content: "";
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  transition: .4s;
+  width: 26px;
+}
+
+.checkbox-wrapper-22 input:checked + .slider {
+  background-color: #30D158;
+}
+
+.checkbox-wrapper-22 input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.checkbox-wrapper-22 .slider.round {
+  border-radius: 34px;
+}
+
+.checkbox-wrapper-22 .slider.round:before {
+  border-radius: 50%;
+}
+
+.stackView {
+  margin: 0 auto;
+  align-items:center;
+  background-color:rgba(128, 128, 128, 0.2);
+  width:500px;
+  height:380px;
+  border-radius:20px;
+  padding:20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.button-10 {
+  margin: 0 auto;
+  margin-top:20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6px 14px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+  border-radius: 6px;
+  border: none;
+
+  color: #fff;
+  background: linear-gradient(180deg, #4B91F7 0%, #367AF6 100%);
+   background-origin: border-box;
+  box-shadow: 0px 0.5px 1.5px rgba(54, 122, 246, 0.25), inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-10:focus {
+  box-shadow: inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2), 0px 0.5px 1.5px rgba(54, 122, 246, 0.25), 0px 0px 0px 3.5px rgba(58, 108, 217, 0.5);
+  outline: 0;
+}
