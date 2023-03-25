@@ -6,6 +6,7 @@ body {
   align-items: center;
   font-family: sans-serif;
   color: #fff;
+  margin-top: 20px;
 }
 
 .dark-mode {
@@ -77,10 +78,10 @@ img {
   background-color: #D1D1D6;
   bottom: 0;
   cursor: pointer;
-  left: 20;
+  left: 0;
   position: absolute;
   right: 0;
-  top: 20;
+  top: 0;
   transition: .4s;
 }
 
