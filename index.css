@@ -9,8 +9,15 @@ body {
 }
 
 .dark-mode {
-  background-color: black;
-  color: white;
+  background-color: #000;
+  color: #fff;
+}
+
+@media (prefers-color-scheme: dark) {
+  .body, html {
+    background: #000;
+    color: #fff;
+  }
 }
 
 .header {
@@ -21,7 +28,6 @@ body {
 
 img {
   width: 90%;
-  border-radius:10px;
 }
 
 .masonry {
@@ -71,10 +77,10 @@ img {
   background-color: #D1D1D6;
   bottom: 0;
   cursor: pointer;
-  left: 0;
+  left: 20;
   position: absolute;
   right: 0;
-  top: 0;
+  top: 20;
   transition: .4s;
 }
 
