@@ -1,1 +1,178 @@
+body {
+  background-color: #000;
+  align-items: center;
+  font-family: sans-serif;
+  color: #fff;
+  text-align:center;
+  padding: 25px;
+}
 
+.dark-mode {
+  background-color:#fff;
+  color:#000;
+  .button-65 {
+    background-color:#000;
+    color:#fff;
+  }
+}
+
+.header {
+  padding: 20px;
+  text-align: center;
+  font-size: 30px;
+}
+
+img {
+  width: 90%;
+  border-radius:20px;
+}
+
+.masonry {
+	column-count: 4;
+	column-gap: 8px;
+  margin: 0 auto;
+  width:80%;
+}
+
+.masonry .mItem {
+  display: inline-block;
+  margin-bottom: 20px;
+  width: 90%;
+}
+
+@media (max-width: 1199px) {
+  .masonry {
+    column-count: 3;
+  }
+}
+
+@media (max-width: 991px) {
+  .masonry {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 767px) {
+  .masonry {
+    column-count: 1;
+  }
+  .button {
+    padding: 14px 22px;
+    width: 176px;
+  }
+}
+
+.checkbox-wrapper-22 .switch {
+  display: inline-block;
+  height: 34px;
+  position: relative;
+  width: 60px;
+}
+
+.checkbox-wrapper-22 .switch input {
+  display:none;
+}
+
+.checkbox-wrapper-22 .slider {
+  background-color: #D1D1D6;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: .4s;
+}
+
+.checkbox-wrapper-22 .slider:before {
+  background-color: #fff;
+  bottom: 4px;
+  content: "";
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  transition: .4s;
+  width: 26px;
+}
+
+.checkbox-wrapper-22 input:checked + .slider {
+  background-color: #30D158;
+}
+
+.checkbox-wrapper-22 input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.checkbox-wrapper-22 .slider.round {
+  border-radius: 34px;
+}
+
+.checkbox-wrapper-22 .slider.round:before {
+  border-radius: 50%;
+}
+
+.stackView {
+  margin: 0 auto;
+  align-items:center;
+  background-color:rgba(128, 128, 128, 0.2);
+  width:500px;
+  height:320px;
+  border-radius:20px;
+  padding:20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.button-65 {
+  appearance: none;
+  backface-visibility: hidden;
+  background-color: #2f80ed;
+  border-radius: 10px;
+  border-style: none;
+  box-shadow: none;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Inter,-apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  height: 30px;
+  letter-spacing: normal;
+  line-height: 1.5;
+  outline: none;
+  overflow: hidden;
+  padding: 7px 15px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transform: translate3d(0, 0, 0);
+  transition: all .3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+.button-65:hover {
+  background-color: #1366d6;
+  box-shadow: rgba(0, 0, 0, .05) 0 5px 30px, rgba(0, 0, 0, .05) 0 1px 4px;
+  opacity: 1;
+  transform: translateY(0);
+  transition-duration: .35s;
+}
+
+.button-65:hover:after {
+  opacity: .5;
+}
+
+.button-65:active {
+  box-shadow: rgba(0, 0, 0, .1) 0 3px 6px 0, rgba(0, 0, 0, .1) 0 0 10px 0, rgba(0, 0, 0, .1) 0 1px 4px -1px;
+  transform: translateY(2px);
+  transition-duration: .35s;
+}
+
+.button-65:active:after {
+  opacity: 1;
+}
