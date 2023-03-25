@@ -54,6 +54,10 @@ img {
   }
 }
 
+.checkbox-wrapper {
+  top:20px;
+}
+
 .checkbox-wrapper-22 .switch {
   display: inline-block;
   height: 34px;
