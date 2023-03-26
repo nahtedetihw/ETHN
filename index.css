@@ -1,6 +1,6 @@
 body {
-    background:#000;
-    color:#fff;
+  background:#000;
+  color:#fff;
   align-items: center;
   font-family: sans-serif;
   text-align:center;
@@ -16,6 +16,21 @@ body {
   .dark-mode {
     background: #fff;
     color: #000;
+  }
+  .body {
+      background:#fff;
+      color:#000;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .dark-mode {
+    background: #000;
+    color: #fff;
+  }
+  .body {
+      background:#000;
+      color:#fff;
   }
 }
 
