@@ -8,8 +8,30 @@ body {
 }
 
 .dark-mode {
-  background-color:#fff;
+  background:#fff;
   color:#000;
+}
+
+@media (prefers-color-scheme: dark) {
+  .dark-mode {
+    background: #000;
+    color: #fff;
+  }
+  .body {
+      background-color:#000;
+      color:#fff;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .dark-mode {
+    background: #fff;
+    color: #000;
+  }
+  .body {
+      background-color:#fff;
+      color:#000;
+  }
 }
 
 .header {
