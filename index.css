@@ -28,6 +28,7 @@ img {
 	column-gap: 8px;
   margin: 0 auto;
   width:100%;
+  align-items: center;
 }
 
 .masonry .mItem {
