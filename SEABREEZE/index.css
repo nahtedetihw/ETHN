@@ -10,10 +10,6 @@ body {
 .dark-mode {
   background-color:#fff;
   color:#000;
-  .button-65 {
-    background-color:#000;
-    color:#fff;
-  }
 }
 
 .header {

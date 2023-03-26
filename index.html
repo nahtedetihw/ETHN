@@ -5,6 +5,7 @@
 <script src="https://kit.fontawesome.com/64ccec8739.js" crossorigin="anonymous"></script>
 
 <body>
+    <meta name="theme-color" content="#fff" media="(prefers-color-scheme: light)">
     <meta name="theme-color" content="#000" media="(prefers-color-scheme: dark)">
     
   <div class="checkbox-wrapper-22">
@@ -14,14 +15,12 @@
   </label>
 </div>
 
-<script>
-    function myFunction() {
-        const checkbox = document.getElementById('checkbox');
-        checkbox.addEventListener('change', ()=>{
-            document.body.classList.toggle('dark');
-        })
-    }
-</script>
+  <script>
+  function myFunction() {
+     var element = document.body;
+     element.classList.toggle("dark-mode");
+  }
+  </script>
 
 <div class="header">
   <h1>Wallpapers</h1>
