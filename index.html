@@ -1,5 +1,4 @@
 <head>
-    <meta name="theme-color" content="#000" media="(prefers-color-scheme: dark)">
 <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 
@@ -16,10 +15,10 @@
 </div>
 
 <script>
-function myFunction() {
-   var element = document.body;
-   element.classList.toggle("dark-mode");
-}
+const checkbox = document.getElementById('checkbox');
+checkbox.addEventListener('change', ()=>{
+  document.body.classList.toggle('dark');
+})
 </script>
 
 <div class="header">

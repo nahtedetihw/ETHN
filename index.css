@@ -7,16 +7,9 @@ body {
   padding: 25px;
 }
 
-.dark-mode {
+body.dark {
   background-color:#fff;
   color:#000;
-  .toolbar {
-      background-color:#fff;
-  }
-}
-
-.toolbar {
-    background-color:#000;
 }
 
 .header {
