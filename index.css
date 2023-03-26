@@ -1,22 +1,11 @@
 body {
-  background:#000;
-  color:#fff;
   align-items: center;
   font-family: sans-serif;
   text-align:center;
   padding: 25px;
 }
 
-.dark-mode {
-  background:#fff;
-  color:#000;
-}
-
 @media (prefers-color-scheme: light) {
-  .dark-mode {
-    background: #fff;
-    color: #000;
-  }
   .body {
       background:#fff;
       color:#000;
@@ -24,10 +13,6 @@ body {
 }
 
 @media (prefers-color-scheme: dark) {
-  .dark-mode {
-    background: #000;
-    color: #fff;
-  }
   .body {
       background:#000;
       color:#fff;
@@ -69,55 +54,6 @@ img {
   .masonry {
     column-count: 1;
   }
-}
-
-.checkbox-wrapper-22 .switch {
-  display: inline-block;
-  height: 34px;
-  position: relative;
-  width: 60px;
-}
-
-.checkbox-wrapper-22 .switch input {
-  display:none;
-}
-
-.checkbox-wrapper-22 .slider {
-  background-color: #D1D1D6;
-  bottom: 0;
-  cursor: pointer;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  transition: .4s;
-}
-
-.checkbox-wrapper-22 .slider:before {
-  background-color: #fff;
-  bottom: 4px;
-  content: "";
-  height: 26px;
-  left: 4px;
-  position: absolute;
-  transition: .4s;
-  width: 26px;
-}
-
-.checkbox-wrapper-22 input:checked + .slider {
-  background-color: #30D158;
-}
-
-.checkbox-wrapper-22 input:checked + .slider:before {
-  transform: translateX(26px);
-}
-
-.checkbox-wrapper-22 .slider.round {
-  border-radius: 34px;
-}
-
-.checkbox-wrapper-22 .slider.round:before {
-  border-radius: 50%;
 }
 
 .caption_center_footer {
