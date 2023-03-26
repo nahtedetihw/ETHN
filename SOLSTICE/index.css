@@ -91,6 +91,7 @@ img {
 .button-10 {
   margin: 0 auto;
   margin-top:60px;
+  margin-bottom:60px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -115,7 +116,7 @@ img {
 
 .caption_center_footer {
   margin-top:60px;
-  width:500px;
+  width:400px;
   display: flex;
   column-gap: 20px;
   justify-content: space-between;
