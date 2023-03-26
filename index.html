@@ -7,7 +7,7 @@
 <body>
     <meta name="theme-color" content="#000" media="(prefers-color-scheme: dark)">
     
-  <div class="checkbox-wrapper-22"">
+  <div class="checkbox-wrapper-22">
   <label class="switch" for="checkbox">
     <input type="checkbox" id="checkbox" onclick="myFunction()"/>
     <div class="slider round"></div>
@@ -15,10 +15,12 @@
 </div>
 
 <script>
-const checkbox = document.getElementById('checkbox');
-checkbox.addEventListener('change', ()=>{
-  document.body.classList.toggle('dark');
-})
+    function myFunction() {
+        const checkbox = document.getElementById('checkbox');
+        checkbox-wrapper-22.addEventListener('change', ()=>{
+            document.body.classList.toggle('dark');
+        })
+    }
 </script>
 
 <div class="header">
