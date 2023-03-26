@@ -18,11 +18,6 @@ body {
   font-size: 30px;
 }
 
-img {
-  width: 100%;
-  border-radius:20px;
-}
-
 .masonry {
 	column-count: 4;
 	column-gap: 8px;
@@ -34,6 +29,7 @@ img {
   display: inline-block;
   margin-bottom: 20px;
   width: 90%;
+  border-radius:20px;
 }
 
 @media (max-width: 1199px) {
@@ -104,6 +100,7 @@ img {
 }
 
 .caption_center_footer {
+  width:500px;
   display: flex;
   column-gap: 20px;
   justify-content: space-between;

@@ -114,6 +114,7 @@ img {
 }
 
 .caption_center_footer {
+  width:500px;
   display: flex;
   column-gap: 20px;
   justify-content: space-between;
