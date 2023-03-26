@@ -7,9 +7,16 @@ body {
   padding: 25px;
 }
 
+.main_nav{
+  background-color:#000;
+}
+
 .dark-mode {
   background-color:#fff;
   color:#000;
+  .main_nav{
+    background-color:#fff;
+  }
 }
 
 .header {
