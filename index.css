@@ -102,3 +102,10 @@ img {
 .checkbox-wrapper-22 .slider.round:before {
   border-radius: 50%;
 }
+
+.caption_center_footer {
+  display: flex;
+  column-gap: 20px;
+  justify-content: space-between;
+  text-align: center;
+}
