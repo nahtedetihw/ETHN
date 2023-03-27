@@ -134,7 +134,7 @@ img {
   fill: none;
   width: 20px;
   height: 26px;
-  margin: 11px 0 0 14px;
+  margin: 11px 0 0 0px;
   transform: translate3d(0, 0, 0);
 }
 .btn svg path {
