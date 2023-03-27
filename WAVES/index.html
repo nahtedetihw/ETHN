@@ -17,17 +17,20 @@ function myFunction() {
    var element = document.body;
    element.classList.toggle("dark-mode");
 }
-                                       
-$('.btn').click ->
-  $('.btn').addClass 'pending'
-  $('.progress').addClass 'active'
-  setTimeout (->
-    $('.progress').removeClass 'active'
-  ), 2300
-  setTimeout (->
-    $('.btn').removeClass 'pending'
-  ), 3600
+                          
+(function() {
+  $('.btn').click(function() {
+    $('.btn').addClass('pending');
+    $('.progress').addClass('active');
+    setTimeout((function() {
+      return $('.progress').removeClass('active');
+    }), 2300);
+    return setTimeout((function() {
+      return $('.btn').removeClass('pending');
+    }), 3600);
+  });
 
+}).call(this);
 </script>
 
 <div class="header">
@@ -39,12 +42,15 @@ $('.btn').click ->
      <h1>WAVES</h1>
      <h4>The breaking of a wave cannot explain the whole sea.</h4>
      <img src="https://nahtedetihw.github.io/wallpapers/images/WAVES-Placeholder.png">
-     a.btn(href='#')
-  span.circle
-  svg(width='20' height='26' viewbox='0 0 20 26')
-    path(d='M1.5 16.5L10 24.5L18.5 16.5')
-    path(d='M10 1.5V24')
-  span.progress
+                                                                                     
+  	<a class="btn" href="#">
+      <span class="circle"></span>
+      <svg width="20" height="26" viewbox="0 0 20 26">
+        <path d="M1.5 16.5L10 24.5L18.5 16.5"></path>
+        <path d="M10 1.5V24"></path>
+      </svg>
+      <span class="progress"></span>
+     </a>
   </div>
                    
   <button class="button-10" onclick="location.href='https://nahtedetihw.github.io/wallpapers'" role="button">Go back</button>
