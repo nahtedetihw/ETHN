@@ -119,110 +119,28 @@ img {
   text-align: center;
 }
 
-* {
-  box-sizing: border-box;
-}
-
-.btn {
-  position: relative;
+.pill-btn{
   display: inline-block;
-  width: 48px;
-  height: 48px;
-  border-radius: 24px;
-}
-.btn svg {
-  fill: none;
-  width: 20px;
-  height: 26px;
-  margin: 11px 0 0 12px;
-  transform: translate3d(0, 0, 0);
-}
-.btn svg path {
-  stroke: #fff;
-  stroke-width: 3;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  transition: stroke 0.3s ease;
-}
-.btn .circle {
-  position: absolute;
-  display: block;
-  top: 0;
-  left: 0;
-  height: 48px;
-  width: 48px;
-  border-radius: 24px;
-  border: 3px solid #fff;
-  transition: border 0.3s ease;
-}
-.btn .progress {
-  position: absolute;
-  display: block;
-  bottom: -10px;
-  left: 0;
-  height: 3px;
-  width: 48px;
-  border-radius: 3px;
-  background: rgba(255, 255, 255, 0.2);
-  opacity: 0;
-  pointer-events: none;
-  overflow: hidden;
-}
-.btn .progress:after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 3px;
-  border-radius: 2px;
+  box-sizing: border-box;
+  height: 29px;
+  line-height: 27px;
   background: #0A84FF;
-  transform-origin: left;
-  transform: scaleX(0);
-  transition: transform 2s linear;
+  padding: 0px 16px;
+  border-radius: 999em;
+  border-width:opx;
+  text-decoration: none;
+  color: #fff;
+  font-size: 12px;
+      vertical-align: bottom;
+    white-space: nowrap;
+  font-family: -apple-system-headline,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+  text-rendering: optimizeLegibility;
+   -webkit-font-smoothing: antialiased;
+      --x-height-multiplier: 0;
+    --baseline-multiplier: 0;
+  transition: .1s background-color,.1s color,.1s fill;
+  font-weight: bold;
 }
-.btn .progress.active {
-  opacity: 1;
-}
-.btn .progress.active::after {
-  transform: scaleX(1);
-}
-.btn:hover .circle {
-  border-color: #0A84FF;
-}
-.btn:hover svg path {
-  stroke: #0A84FF;
-}
-.btn:active svg {
-  transform: translateY(2px);
-}
-.btn.pending .circle {
-  border-color: #0A84FF;
-  animation: animC 0.6s ease-out;
-  animation-delay: 2.35s;
-}
-.btn.pending svg {
-  animation: animS 0.6s ease-in;
-  animation-delay: 2.15s;
-}
-.btn.pending svg path {
-  stroke: #0A84FF;
-}
-
-@keyframes animS {
-  5% {
-    transform: scale(0.9);
-  }
-  50% {
-    transform: translateY(12px);
-  }
-  80% {
-    transform: translateY(-4px);
-  }
-}
-@keyframes animC {
-  50% {
-    transform: translateY(6px);
-  }
-  80% {
-    transform: translateY(-4px);
-  }
+.pill-btn:hover{
+  background: #007AFF;
 }
