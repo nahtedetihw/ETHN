@@ -17,6 +17,17 @@ function myFunction() {
    var element = document.body;
    element.classList.toggle("dark-mode");
 }
+                                       
+$('.btn').click ->
+  $('.btn').addClass 'pending'
+  $('.progress').addClass 'active'
+  setTimeout (->
+    $('.progress').removeClass 'active'
+  ), 2300
+  setTimeout (->
+    $('.btn').removeClass 'pending'
+  ), 3600
+
 </script>
 
 <div class="header">
@@ -28,7 +39,12 @@ function myFunction() {
      <h1>WAVES</h1>
      <h4>The breaking of a wave cannot explain the whole sea.</h4>
      <img src="https://nahtedetihw.github.io/wallpapers/images/WAVES-Placeholder.png">
-     <button class="button-10" onclick="window.open('https://nahtedetihw.github.io/wallpapers/images/WAVES.zip')" role="button">Download</button>
+     a.btn(href='#')
+  span.circle
+  svg(width='20' height='26' viewbox='0 0 20 26')
+    path(d='M1.5 16.5L10 24.5L18.5 16.5')
+    path(d='M10 1.5V24')
+  span.progress
   </div>
                    
   <button class="button-10" onclick="location.href='https://nahtedetihw.github.io/wallpapers'" role="button">Go back</button>
