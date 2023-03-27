@@ -119,103 +119,124 @@ img {
   text-align: center;
 }
 
-$primary: #0A84FF
-$secondary: #fff
-
 *
   box-sizing: border-box
 
-.btn
-  position: relative
-  display: inline-block
-  width: 48px
-  height: 48px
-  border-radius: 24px
-  svg
-    fill: none
-    width: 20px
-    height: 26px
-    margin: 11px 0 0 14px
-    transform: translate3d(0,0,0)
-    path
-      stroke: $secondary
-      stroke-width: 3
-      stroke-linecap: round
-      stroke-linejoin: round
-      transition: stroke .3s ease
+.btn {
+  position: relative;
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  border-radius: 24px;
+}
 
-  .circle
-    position: absolute
-    display: block
-    top: 0
-    left: 0
-    height: 48px
-    width: 48px
-    border-radius: 24px
-    border: 3px solid $secondary
-    transition: border .3s ease
+.btn svg {
+  fill: none;
+  width: 20px;
+  height: 26px;
+  margin: 11px 0 0 14px;
+  transform: translate3d(0, 0, 0);
+}
 
-  .progress
-    position: absolute
-    display: block
-    bottom: -10px
-    left: 0
-    height: 3px
-    width: 48px
-    border-radius: 3px
-    background: rgba($secondary,.2)
-    opacity: 0
-    pointer-events: none
-    overflow: hidden
-    &:after
-      content: ''
-      display: block
-      width: 100%
-      height: 3px
-      border-radius: 2px
-      background: $primary
-      transform-origin: left
-      transform: scaleX(0)
-      transition: transform 2s linear
-    
-    &.active
-      opacity: 1
-      &::after
-        transform: scaleX(1)
+.btn svg path {
+  stroke: #fff;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: stroke 0.3s ease;
+}
 
-  &:hover
-    .circle
-      border-color: $primary
-    
-    svg
-      path
-        stroke: $primary
-  &:active
-    svg
-      transform: translateY(2px)
-  
-  &.pending
-    .circle
-      border-color: $primary
-      animation: animC .6s ease-out
-      animation-delay: 2.35s
+.btn .circle {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  height: 48px;
+  width: 48px;
+  border-radius: 24px;
+  border: 3px solid #fff
+  ;
+  transition: border 0.3s ease;
+}
 
-    svg
-      animation: animS .6s ease-in
-      animation-delay: 2.15s
-      path
-        stroke: $primary
+.btn .progress {
+  position: absolute;
+  display: block;
+  bottom: -10px;
+  left: 0;
+  height: 3px;
+  width: 48px;
+  border-radius: 3px;
+  background: rgba(253, 215, 210, 0.2);
+  opacity: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
 
-@keyframes animS
-    5%
-      transform: scale(.9)
-    50%
-      transform: translateY(12px)
-    80%
-      transform: translateY(-4px)
+.btn .progress:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  border-radius: 2px;
+  background: #0A84FF;
+  transform-origin: left;
+  transform: scaleX(0);
+  transition: transform 2s linear;
+}
 
-@keyframes animC
-    50%
-      transform: translateY(6px)
-    80%
-      transform: translateY(-4px)
+.btn .progress.active {
+  opacity: 1;
+}
+
+.btn .progress.active::after {
+  transform: scaleX(1);
+}
+
+.btn:hover .circle {
+  border-color: #0A84FF;
+}
+
+.btn:hover svg path {
+  stroke: #0A84FF;
+}
+
+.btn:active svg {
+  transform: translateY(2px);
+}
+
+.btn.pending .circle {
+  border-color: #0A84FF;
+  animation: animC 0.6s ease-out;
+  animation-delay: 2.35s;
+}
+
+.btn.pending svg {
+  animation: animS 0.6s ease-in;
+  animation-delay: 2.15s;
+}
+
+.btn.pending svg path {
+  stroke: #0A84FF;
+}
+
+@keyframes animS {
+  5% {
+    transform: scale(0.9);
+  }
+  50% {
+    transform: translateY(12px);
+  }
+  80% {
+    transform: translateY(-4px);
+  }
+}
+
+@keyframes animC {
+  50% {
+    transform: translateY(6px);
+  }
+  80% {
+    transform: translateY(-4px);
+  }
+}
