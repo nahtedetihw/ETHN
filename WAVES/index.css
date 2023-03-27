@@ -120,12 +120,13 @@ img {
 }
 
 .pill-btn{
+  margin-top:60px;
   display: inline-block;
   box-sizing: border-box;
   height: 29px;
-  line-height: 27px;
+  line-height: 28px;
   background: #0A84FF;
-  padding: 0px 16px;
+  padding: 0px 20px;
   border-radius: 999em;
   border-width:opx;
   text-decoration: none;
