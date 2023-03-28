@@ -21,6 +21,7 @@ body {
 img {
   width:100%;
   border-radius:20px;
+  -webkit-backface-visibility: hidden;
   -moz-border-radius: 20px;
   -khtml-border-radius: 20px;
   -webkit-border-radius: 20px;
@@ -89,17 +90,10 @@ img {
   display: inline-block;
   margin-bottom: 20px;
   border-radius:20px;
+  -webkit-backface-visibility: hidden;
   -moz-border-radius: 20px;
   -khtml-border-radius: 20px;
   -webkit-border-radius: 20px;
-}
-
-.masonry .mItem::after {
-  position:absolute;
-  top: 1px;
-  right: 1px;
-  bottom: 1px;
-  left: 1px;
 }
 
 @media (max-width: 991px) {
