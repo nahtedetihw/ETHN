@@ -105,13 +105,13 @@ img {
 
 @media (max-width: 991px) {
   .masonry {
-    column-count: 2;
+    column-count: 3;
   }
 }
 
 @media (max-width: 767px) {
   .masonry {
-    column-count: 1;
+    column-count: 2;
   }
 }
 
