@@ -91,6 +91,9 @@ img {
   margin-bottom: 20px;
   border-radius:20px;
   -webkit-backface-visibility: hidden;
+ -moz-backface-visibility: hidden;
+ -webkit-transform: translate3d(0, 0, 0);
+ -moz-transform: translate3d(0, 0, 0);
   -moz-border-radius: 20px;
   -khtml-border-radius: 20px;
   -webkit-border-radius: 20px;
