@@ -91,6 +91,7 @@ img {
   display: inline-block;
   margin-bottom: 20px;
   border-radius:20px;
+-webkit-mask-image: -webkit-radial-gradient(white, black);
   -webkit-backface-visibility: hidden;
  -moz-backface-visibility: hidden;
  -webkit-transform: translate3d(0, 0, 0);
