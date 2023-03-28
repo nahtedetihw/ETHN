@@ -19,12 +19,8 @@ body {
 }
 
 img {
-  width:100%;
-  border-radius:20px;
-  -webkit-backface-visibility: hidden;
-  -moz-border-radius: 20px;
-  -khtml-border-radius: 20px;
-  -webkit-border-radius: 20px;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .checkbox-wrapper-22 .switch {
@@ -76,46 +72,21 @@ img {
   border-radius: 50%;
 }
 
-.masonry {
-	column-count: 3;
-	column-gap: 8px;
+.stackView {
+  border: -1px solid rgba(255,255,255,0.3);
   margin: 0 auto;
-  width:100%;
-  align-items: center;
-}
-
-.masonry .mItem {
-  width:100%;
-  height;100%;
-  outline: 1px solid rgba(255,255,255,0.3);
-  outline-offset: -1px;
-  position: relative; z-index: 1;
-  display: inline-block;
-  margin-bottom: 20px;
+  align-items:center;
+  background-color:rgba(128, 128, 128, 0.2);
+  width:500px;
+  height:500px;
   border-radius:20px;
--webkit-mask-image: -webkit-radial-gradient(white, black);
-  -webkit-backface-visibility: hidden;
- -moz-backface-visibility: hidden;
- -webkit-transform: translate3d(0, 0, 0);
- -moz-transform: translate3d(0, 0, 0);
-  -moz-border-radius: 20px;
-  -khtml-border-radius: 20px;
-  -webkit-border-radius: 20px;
-}
-
-@media (max-width: 991px) {
-  .masonry {
-    column-count: 2;
-  }
-}
-
-@media (max-width: 767px) {
-  .masonry {
-    column-count: 1;
-  }
+  padding:20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .caption_center_footer {
+  border: -1px solid rgba(255,255,255,0.3);
   border-radius:20px;
   padding:10px;
   background-color:rgba(128, 128, 128, 0.2);
@@ -134,7 +105,7 @@ img {
   box-sizing: border-box;
   height: 29px;
   line-height: 28px;
-  background: #FF453A;
+  background: #0A84FF;
   padding: 0px 20px;
   border-radius: 999em;
   border-width:opx;
@@ -152,5 +123,5 @@ img {
   font-weight: bold;
 }
 .pill-btn:hover{
-  background: #FF3B30;
+  background: #007AFF;
 }
