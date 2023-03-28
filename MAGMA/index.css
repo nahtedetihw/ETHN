@@ -1,3 +1,41 @@
+@font-face {
+    font-family: 'SFProDisplay';
+    src: url('https://nahtedetihw.github.io/wallpapers/fonts/SFProDisplay.woff2') format('woff2'),
+         url('https://nahtedetihw.github.io/wallpapers/fonts/SFProDisplay.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 {
+font-family: 'SFProDisplay', Arial, sans-serif;
+font-weight:normal;
+font-style:normal;
+}
+
+h2 {
+font-family: 'SFProDisplay', Arial, sans-serif;
+font-weight:normal;
+font-style:normal;
+}
+
+h3 {
+font-family: 'SFProDisplay', Arial, sans-serif;
+font-weight:normal;
+font-style:normal;
+}
+
+h4 {
+font-family: 'SFProDisplay', Arial, sans-serif;
+font-weight:normal;
+font-style:normal;
+}
+
+p {
+font-family: 'SFProDisplay', Arial, sans-serif;
+font-weight:normal;
+font-style:normal;
+}
+
 body {
   background-color: #000;
   align-items: center;

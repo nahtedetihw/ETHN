@@ -30,6 +30,12 @@ font-weight:normal;
 font-style:normal;
 }
 
+p {
+font-family: 'SFProDisplay', Arial, sans-serif;
+font-weight:normal;
+font-style:normal;
+}
+
 body {
   background-color: #000;
   align-items: center;
