@@ -73,6 +73,7 @@ img {
 }
 
 .stackView {
+  border: -1px solid rgba(255,255,255,0.3);
   margin: 0 auto;
   align-items:center;
   background-color:rgba(128, 128, 128, 0.2);
@@ -84,37 +85,43 @@ img {
   margin-top: 20px;
 }
 
-.button-10 {
-  margin: 0 auto;
-  margin-top:60px;
-  margin-bottom:60px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 6px 14px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
-  border-radius: 6px;
-  border: none;
-
-  color: #fff;
-  background: linear-gradient(180deg, #4B91F7 0%, #367AF6 100%);
-   background-origin: border-box;
-  box-shadow: 0px 0.5px 1.5px rgba(54, 122, 246, 0.25), inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2);
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-}
-
-.button-10:focus {
-  box-shadow: inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2), 0px 0.5px 1.5px rgba(54, 122, 246, 0.25), 0px 0px 0px 3.5px rgba(58, 108, 217, 0.5);
-  outline: 0;
-}
-
 .caption_center_footer {
-  margin-top:60px;
+  border: -1px solid rgba(255,255,255,0.3);
+  border-radius:20px;
+  padding:10px;
+  background-color:rgba(128, 128, 128, 0.2);
+  margin-top:80px;
+  margin-bottom: 20px;
   width:400px;
   display: flex;
   column-gap: 20px;
   justify-content: space-between;
   text-align: center;
+}
+
+.pill-btn{
+  margin-top:30px;
+  display: inline-block;
+  box-sizing: border-box;
+  height: 29px;
+  line-height: 28px;
+  background: #0A84FF;
+  padding: 0px 20px;
+  border-radius: 999em;
+  border-width:opx;
+  text-decoration: none;
+  color: #fff;
+  font-size: 12px;
+      vertical-align: bottom;
+    white-space: nowrap;
+  font-family: -apple-system-headline,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+  text-rendering: optimizeLegibility;
+   -webkit-font-smoothing: antialiased;
+      --x-height-multiplier: 0;
+    --baseline-multiplier: 0;
+  transition: .1s background-color,.1s color,.1s fill;
+  font-weight: bold;
+}
+.pill-btn:hover{
+  background: #007AFF;
 }
