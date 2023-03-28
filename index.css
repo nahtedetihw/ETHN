@@ -84,12 +84,22 @@ img {
 }
 
 .masonry .mItem {
+  outline: 1px solid rgba(255,255,255,0.3);
+  outline-offset: -1px;
   display: inline-block;
   margin-bottom: 20px;
   border-radius:20px;
   -moz-border-radius: 20px;
   -khtml-border-radius: 20px;
   -webkit-border-radius: 20px;
+}
+
+.masonry .mItem::after {
+  position:absolute;
+  top: 1px;
+  right: 1px;
+  bottom: 1px;
+  left: 1px;
 }
 
 @media (max-width: 991px) {
