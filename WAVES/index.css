@@ -124,17 +124,38 @@ img {
 }
 
 .caption_center_footer {
-  border: -1px solid rgba(255,255,255,0.3);
-  border-radius:20px;
-  padding:10px;
-  background-color:rgba(128, 128, 128, 0.2);
-  margin-top:80px;
-  margin-bottom: 20px;
-  width:400px;
-  display: flex;
-  column-gap: 20px;
-  justify-content: space-between;
-  text-align: center;
+    margin:0 auto;
+    margin-top;20px;
+    margin-bottom:20px;
+  padding:0px 20px;
+    height:60px;
+    width:400px;
+    display: flex;
+      position: relative;
+      column-gap: 10px;
+      justify-content: space-between;
+      background: rgba(128,128,128,0.3);
+      border-radius: 10px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -khtml-border-radius: 10px;
+}
+
+.caption_center_footer img {
+  padding:10px 5px;
+    display: inline-block;
+  position:relative;
+  margin:0 auto;
+  justify-content: center;
+  height:40px;
+  width:40px;
+  transition: transform .2s;
+  -webkit-transition: transform .2s;
+}
+
+.caption_center_footer img:hover {
+    transform: scale(1.7);
+    -webkit-transform: scale(1.7);
 }
 
 .pill-btn{
